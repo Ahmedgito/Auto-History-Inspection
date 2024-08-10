@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Auto History Inspection</title>
+   
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+          <a href="#"> <img src="/assets/logon.png" alt=""></a> 
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#service">About Us</a></li>
+          <li><a href="#rent">Services</a></li>
+          <li><a href="#ride">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="">Memberships</a></li>
+          <li><a href="">Countries</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn btn__translate" id="google-translate-button"></button>
+          <button class="btn btn__secondary" id="boat_plan" >Boat Plans</button>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="/assets/image3.png " alt="Slide 1" class="slide active">
+      </div>
+        <div class="header__content">
+          <h1>GET YOUR VEHICLE INSPECTED</h1>
+          <p>
+            Ensure Your Vehicle is in Prime Condition with an Auto History Inspection Report
+          </p>
+
+          <!--......... FORM BUTTON ...........-->
+          <form action="/pricing.html">
+            <input type="text" name="vin" class="input" placeholder="Enter VIN Number here" 
+                   oninput="this.value = this.value.replace(/[^0-9]/g, '');" required />
+            
+            <div>
+              <!-- SUBMIT BUTTON -->
+              <button type="submit" class="add-new">Get Report</button>
+              <!-- SUBMIT BUTTON -->
+            </div>
+          </form>
+          
+          <!-- .........END FORM BUTTON.......... -->
+        </div>
+      </div>
+    </header>
+
+    <!--......... ABOUT US-START.......... -->
+    <section class="section__container service__container" id="service">
+      <div class="service__image">
+        <img src="/assets/service.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <h2 class="section__header">
+          About Us
+        </h2>
+        <ul class="service__list">
+          <li>
+            <div>
+              <p>Welcome to <b>AUTO HISTORY INSPECTION</b>, your trusted partner in the vehicle marketplace. We provide comprehensive vehicle history reports for pre-owned vehicles across over 190 countries, promoting transparency and trust in every transaction.
+                Our mission is to empower buyers and sellers with accurate, reliable information. Whether you're purchasing a car, motorcycle, camper trailer, boat, or all-terrain vehicle, our reports offer detailed insights into ownership history, accident records, service logs, and more.
+                For buyers, our reports ensure informed decisions, while sellers can enhance their listings by showcasing transparency. Choose <b>AUTO HISTORY INSPECTION</b>  for a secure and confident vehicle transaction.saction and experience the peace of mind that comes with making informed decisions.
+                </p>
+              
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+    </section>
+            <!--......... ABOUT US-END.......... -->
+
+            <!--......... EXPERIENCE-START.......... -->
+    <section class="section__container steps__container" id="rent">
+      <div class="wrapper">
+        <div class="container">
+          <i class="fab fa-twitter"></i>
+          <span class="num" id="num1" data-val="9">0+</span>
+          <span class="text">Years Experience</span>
+        </div>
+        <div class="container">
+          <i class="fab fa-facebook-f"></i>
+          <span class="num" id="num2" data-val="32">0k+</span>
+          <span class="text">Customers Served</span>
+        </div>
+        <div class="container">
+          <i class="fab fa-youtube"></i>
+          <span class="num" id="num3" data-val="190" >0+</span>
+          <span class="text">Supported Countries</span>
+        </div>
+        <div class="container">
+          <i class="fab fa-instagram"></i>
+          <span class="num" id="num4" data-val="99">0%</span>
+          <span class="text">Customer Satisfaction</span>
+        </div>
+      </div>
+    </section>
+    <!--......... EXPERIENCE-END.......... -->
+
+    <!--......... SERVICE - START.......... -->
+    <section class="service">
+      <div class="row">
+        <h1  class="section-heading">
+          Our Services</h1>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-file-search-line"></i>
+            </div>
+            <h3>Market Value Assessment</h3>
+            <p>
+              Assessing a vehicle's market value involves considering supply and demand, the vehicle's condition, age, mileage, brand reputation, and market trends. Thorough research and price comparisons are crucial for determining a fair value.
+
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-gas-station-fill"></i>
+            </div>
+            <h3> Fuel Efficiency            </h3>
+            <p>
+              Key factors in accurately determining your vehicle’s value include mileage, overall condition, features, and current market trends.
+
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-alarm-warning-fill"></i>
+            </div>
+            <h3>Information Theft Protection</h3>
+            <p>
+              For secure access to international vehicle records, our services include liaising with relevant government authorities and utilizing specialized databases to protect against information theft.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-flashlight-fill"></i>
+            </div>
+            <h3>Damages</h3>
+            <p>
+              Our service provides detailed vehicle collision information, including statistics on uncommon accident types and their causes.  
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-sailboat-fill"></i>
+            </div>
+            <h3>Boat Specifications</h3>
+            <p>
+              We offer comprehensive vehicle specification details, covering everything from engine performance to safety features, ensuring you have all the information you need.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="ri-history-line"></i>
+            </div>
+            <h3>Boat Sales History</h3>
+            <p>
+              We provide detailed insights into a vehicle's sales history, including previous listings from private sellers and dealerships, along with sale dates and pricing information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--......... SERVICE - END.......... -->
+
+<!--......... SERVICE - END.......... -->
+
+
+<!--......... SERVICE - END.......... -->
+
+    <section class="Contact" id="contact">
+<div class="contact-form">
+  <span class="heading">Get in touch with us</span>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" required="">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required=""></textarea>
+    <button class="add-new" type="submit">Submit</button>
+  </form>
+</div>
+
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Our Products</h4>
+          <ul class="footer__links">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Priceline</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>About RentalX</h4>
+          <ul class="footer__links">
+            <li><a href="#">Why RentalX</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Press Centers</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Help Centers</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Partner Network</a></li>
+            <li><a href="#">Mechanics</a></li>
+            <li><a href="#">Developer</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Extras</h4>
+          <ul class="footer__links">
+            <li><a href="#">Rental Deal</a></li>
+            <li><a href="#">Repair Shop</a></li>
+            <li><a href="#">View Booking</a></li>
+            <li><a href="#">Hire Companies</a></li>
+            <li><a href="#">New Offers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <h4>RentalX</h4>
+        <p>Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-google-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  
+  <!-- Google Translate script -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google-translate-button');
+      }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script src="/experience.js"></script>
+  </body>
+</html>
