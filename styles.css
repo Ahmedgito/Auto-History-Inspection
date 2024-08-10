@@ -739,21 +739,11 @@ p {
   gap: 2rem;
 }
 
-/* .service__list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.service__list li span {
-  padding: 12px 15px;
-  font-size: 1.5rem;
+label{
   color: var(--primary-color);
-  background-color: var(--extra-light);
-  border: 4px solid var(--white);
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-} */
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .service__list h4 {
   margin-bottom: 0.5rem;
