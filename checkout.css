@@ -320,7 +320,7 @@ body {
   }
   
   .nav__header {
-    padding: 1rem;
+    padding: 0rem;
     width: 100%;
     display: flex;
     align-items: center;
