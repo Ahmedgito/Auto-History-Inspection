@@ -11,7 +11,23 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <header>
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="landing_page.html"><img src="assets/logon.png" alt=""></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <div class="nav__btns">
+           <a href="landing_page.html"> <button class="btn btn__secondary">HOME</button></a>&nbsp;
+           <a href="pricing_page.html"> <button class="btn btn__secondary">PRICING</button></a>
+          </div>
+        </nav>
+    <div class="checkout">
+    <section class="wrapper">
         <h2>Payment Form</h2>
         <form action="" method="post">
             <!--Account Information Start-->
@@ -21,10 +37,7 @@
                     <input type="text" placeholder="Full Name" required class="name">
                     <i class="fa fa-user icon"></i>
                 </div>
-                <div class="input_box">
-                    <input type="text" placeholder="Name on Card" required class="name">
-                    <i class="fa fa-user icon"></i>
-                </div>
+                
             </div>
             <div class="input_group">
                 <div class="input_box">
@@ -50,10 +63,14 @@
             <div class="input_group">
                 <div class="input_box">
                     <h4>Payment Details</h4>
-                    <input type="radio" name="pay" class="radio" id="bc2" required>
+                    <input type="radio" name="pay" class="radio" id="bc2" required checked>
                     <label for="bc2"><span>
-                            <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                            <i class="fa fa-credit-card"></i>&nbsp;Credit/Debit card</span></label>
                 </div>
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Name on Card" required class="name">
+                <i class="fa fa-user icon"></i>
             </div>
             <div class="input_group">
                 <div class="input_box">
@@ -86,15 +103,35 @@
             </div>
             <!--Payment Details End-->
 
+
+               <!-- Checkbox for agreeing to terms and conditions -->
+    <div class="checkbox-container">
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox">I agree to the Terms and Conditions<a href="terms_and_condtions.html"><br><u>Click Here</u></a></label>
+    </div>
+
+    <!-- Submit button -->
             <div class="input_group">
                 <div class="input_box">
-                    <button type="submit">PAY NOW</button>
+                    <button class="submit-btn" id="submitButton" disabled type="submit">PAY NOW</button>
                 </div>
             </div>
 
         </form>
-    </div>
+    </section>
+</div>
+    </header>
 
+    <script>
+        // Enable the submit button only when the checkbox is checked
+        const checkbox = document.getElementById('agreeCheckbox');
+        const submitButton = document.getElementById('submitButton');
+
+        checkbox.addEventListener('change', function() {
+            submitButton.disabled = !checkbox.checked;
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

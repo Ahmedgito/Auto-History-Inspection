@@ -50,7 +50,7 @@
   
   section {
     padding: 100px 0;
-    background-image:url(/assets/carr.png);
+    background-image:url(assets/membershipimg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -65,7 +65,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.60;
+    opacity: 0.80;
     z-index: -1;
   }
   
@@ -171,7 +171,7 @@
   
   .card .card-pricing__header {
     padding: 40px 10px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid  #a5a5a5;
   }
   
   .card .card-pricing__header h4 {
@@ -208,7 +208,7 @@
   .card-pricing__list li {
     margin-bottom: 12px;
     color: #000000;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
   }
@@ -219,7 +219,7 @@
   
   .card-pricing__footer .button {
     padding: 15px 30px;
-    color: #1e1859;
+    color: #0a0a0a;
     background: transparent;
     font-size: 15px;
     font-weight: 700;

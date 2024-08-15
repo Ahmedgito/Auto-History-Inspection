@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <head>
+      <link rel="icon" href="assets/favicon_io (1)/favicon.ico" type="image/x-icon">
+      <title>Boat Plan - Auto History Inspection</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+          <a href="#"> <img src="assets/logon.png" alt=""></a> 
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="landing_page.html">Home</a></li>
+          <li><a href="#rent">Services</a></li>
+          <li><a href="#ride">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="membership.html">Memberships</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn btn__translate" id="google-translate-button"></button>
+          <button class="btn btn__secondary" id="boat_plan" >Buy Now</button>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/image-from-rawpixel-id-6748415-png.png" alt="Slide 1" class="slide active">
+      </div>
+        <div class="header__content">
+          <h1>GET YOUR BOAT INSPECTED</h1>
+          <p>
+            Ensure Your Boat is in Prime Condition with an Auto History Inspection Report
+          </p>
+
+          <!--......... FORM BUTTON ...........-->
+          <form action="boat_pricing.html">
+            <input type="text" name="vin" class="input" placeholder="Enter HIN Number here" 
+                   oninput="this.value = this.value.replace(/[^0-9]/g, '');" required />
+            
+            <div>
+              <!-- SUBMIT BUTTON -->
+              <button type="submit" class="add-new">Get Report</button>
+              <!-- SUBMIT BUTTON -->
+            </div>
+          </form>
+          
+          <!-- .........END FORM BUTTON.......... -->
+        </div>
+      </div>
+    </header>
+
+    <!--......... PACKAGE - START.......... -->
+
+<h1 class="card-heading" id="ride">BOAT PRICING</h1>
+<div class="card_container">
+  
+  <div class="card">
+      <div class="card-title">
+          <h2>Basic</h2>
+          <p><i class="fa fa-dollar"></i><Span>55</Span>/month</p>
+      </div>
+      <div class="card-content">
+          <ul>
+            <li><i class="fa fa-check-circle"></i>2 Boats Report</li>
+            <li><i class="fa fa-check-circle"></i>DMV Title History</li>
+            <li><i class="fa fa-check-circle"></i>Safety Recall Status</li>
+            <li><i class="fa fa-check-circle"></i>Boat Specifications</li>
+            <li><i class="fa fa-check-circle"></i>Accident Information</li>
+            <li><i class="fa fa-check-circle"></i>Online Listing History</li>
+            <li><i class="fa fa-check-circle"></i>Never Expires</li>
+          </ul>
+          <button><a href="boat_pricing.html">Buy Now</a></button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-title">
+          <h2>Silver</h2>
+          <p><i class="fa fa-dollar"></i><Span>100</Span>/month</p>
+      </div>
+      <div class="card-content">
+          <ul>
+              <li><i class="fa fa-check-circle"></i>3 Boats Report</li>
+              <li><i class="fa fa-check-circle"></i>DMV Title History</li>
+              <li><i class="fa fa-check-circle"></i>Safety Recall Status</li>
+              <li><i class="fa fa-check-circle"></i>Boat Specifications</li>
+              <li><i class="fa fa-check-circle"></i>Accident Information</li>
+              <li><i class="fa fa-check-circle"></i>Online Listing History</li>
+              <li><i class="fa fa-check-circle"></i>Never Expires</li>
+          </ul>
+          <button><a href="boat_pricing.html">Buy Now</a></button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-title">
+          <h2>Gold</h2>
+          <p><i class="fa fa-dollar"></i><Span>155</Span>/month</p>
+      </div>
+      <div class="card-content">
+          <ul>
+            <li><i class="fa fa-check-circle"></i>5 Boats Report</li>
+            <li><i class="fa fa-check-circle"></i>DMV Title History</li>
+            <li><i class="fa fa-check-circle"></i>Safety Recall Status</li>
+            <li><i class="fa fa-check-circle"></i>Boat Specifications</li>
+            <li><i class="fa fa-check-circle"></i>Accident Information</li>
+            <li><i class="fa fa-check-circle"></i>Online Listing History</li>
+            <li><i class="fa fa-check-circle"></i>Never Expires</li>
+          </ul>
+          <button><a href="boat_pricing.html">Buy Now</a></button>
+      </div>
+  </div>
+</div>
+
+<!--......... PACKAGE - END.......... -->
+
+<!--......... CONTACT US - START.......... -->
+<section class="Contact" id="contact">
+    <div class="contact-form">
+      <span class="heading">Get in touch with us</span>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" required="">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required=""></textarea>
+        <button class="add-new" type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <!--......... CONTACT US - END.......... -->
+
+
+</section>
+<!------------- FOOTER-START ------------>
+<footer>
+  <div class="section__container footer__container">
+    <div class="footer__col">
+     
+    </div>
+    <div class="footer__col">
+     
+    </div>
+    <div class="footer__col">
+    
+    </div>
+    <div class="footer__col">
+
+    </div>
+  </div>
+  <div class="section__container footer__bar">
+    <h4>Auto History Inspection </h4>
+    <p>Copyright © 2018. All rights reserved.</p>
+    <ul class="footer__socials">
+      <li>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="ri-google-fill"></i></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  <!------------- FOOTER-END ------------>
+
+ <!-- Google Translate script -->
+ <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google-translate-button');
+    }
+  </script>
+<!-- Google Translate script END-->
+
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
